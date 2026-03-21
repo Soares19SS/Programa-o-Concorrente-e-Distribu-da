@@ -1,30 +1,39 @@
 #include <stdio.h>
 
-int main ()
-{
-    float nota1, nota2, nota3, media;
+int main() {
 
-    printf("Digite a primeira nota: \n");
-    scanf("%f", &nota1);
+    float notaLab, notaAva, notaExame, media;
 
-    printf("Digite a segunda nota: \n");
-    scanf("%f", &nota2);
+    printf("Digite as notas do aluno: \n");
+    scanf("%f", &notaLab);
+    scanf("%f", &notaAva);
+    scanf("%f", &notaExame);
 
-    printf("Digite a terceira nota: \n");
-    scanf("%f", &nota3);
+    media = (notaLab *2) + (notaAva *3) + (notaExame *5) /10;
 
-    media = (nota1 + nota2 + nota3) /3;
-
-    if (media >=7 && media <10)
+    if (media >= 8 && media <=10)
     {
-        printf("Passou");
-
-    }   else if (media <7 && media >=3)
+        printf("Conceito A");
+    }else if (media >=7 && media <7,99)
     {
-        printf("Exame");
+        printf("Conceito B");
 
-    }   else  if(media >0)
-        printf("reprovado");
+    }else if (media >=6 && media <7)
+    {
+        printf("Conceito C");
+
+    }else if (media >=5 && media <6)
+    {
+        printf("Conceito D");
+
+    }else if (media <5)
+    {
+        printf("Conceito E");
+    }
+    
+
+    
+    
     
     
 
